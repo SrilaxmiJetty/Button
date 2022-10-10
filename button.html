@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: blue;
+        margin: 1rem;
+        border: 1rem;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 1.5rem;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgb(139, 139, 250);
+      }
+      button:hover:not(:focus) {
+        background-color: rgb(139, 139, 250);
+      }
+      button:focus {
+        background-color: rgb(3, 3, 205);
+      }
+      button:focus:not(:hover) {
+        background-color: rgb(2, 2, 138);
+      }
+      button.success {
+        background-color: rgb(7, 250, 19);
+      }
+      button.success:hover {
+        background-color: rgb(74, 250, 82);
+      }
+      button.success:focus {
+        background-color: rgb(5, 190, 14);
+      }
+      button.info {
+        background-color: rgb(7, 201, 250);
+      }
+      button.btn-warning {
+        background-color: rgb(226, 250, 7);
+        color: black;
+      }
+      button.btn-warning:hover {
+        background-color: rgb(235, 251, 95);
+        color: black;
+      }
+      button.btn-warning:focus {
+        background-color: rgb(188, 191, 3);
+        color: black;
+      }
+      button.btn-error {
+        background-color: rgb(250, 31, 7);
+      }
+      button.btn-error:hover {
+        background-color: rgb(250, 106, 90);
+      }
+      button.btn-error:focus {
+        background-color: rgb(199, 24, 5);
+      }
+      button.info:hover {
+        background-color: rgb(57, 213, 252);
+      }
+      button.info:focus {
+        background-color: rgb(6, 150, 186);
+      }
+      button:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Initial state</button> <br />
+    <button>Hover state</button> <br />
+    <button>Focus state</button> <br />
+    <button class="success">success state</button> <br />
+    <button class="btn-warning">warning state</button> <br />
+    <button class="btn-error">error state</button> <br />
+    <button class="info">info state</button> <br />
+    <button disabled>disabled state</button> <br />
+    <button>😊 button with left icon</button> <br />
+    <button>button with right icon 😊</button> <br />
+    <button>😊 button with left icon & right icons 😊</button> <br />
+  </body>
+</html>
